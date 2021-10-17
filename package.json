@@ -1,0 +1,21 @@
+{
+  "name": "daily-bot",
+  "version": "1.0.0",
+  "description": "This bot sends out daily information",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "JavaScript"
+  ],
+  "author": "Mukhammadyusuf Abdurakhimov",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^3.38.0"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
