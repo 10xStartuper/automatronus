@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "message": "Salom this is sample message",
+    "weekdays": {
+      "monday": true,
+      "tuesday": true,
+      "wednesday": true,
+      "thursday": true,
+      "friday": true,
+      "saturday": true
+    },
+    "time": "18:20"
+  }
+]

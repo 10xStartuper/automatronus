@@ -1,7 +1,11 @@
 require("dotenv").config();
 const { Telegraf } = require("telegraf");
-
+const fs = require("fs");
 const bot = new Telegraf(process.env.BOT_TOKEN);
+
+let rawdata = fs.readFileSync("./data/data.json");
+let data = JSON.parse(rawdata);
+console.log(data);
 
 bot.start((ctx) =>
   ctx.replyWithHTML(
@@ -20,5 +24,12 @@ bot.help((ctx) =>
     /today - 🚀 Plans for today\n`
   )
 );
+
+bot.command("schedule", (ctx) => {
+  ctx.replyWithHTML(
+    `${ctx.from.first_name} what do you want to schedule bro?
+    \nPlease go to <a href="http://127.0.0.1:3000/setactivity">this link</a> to schedule new reminder!`
+  );
+});
 
 bot.launch();
