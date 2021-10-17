@@ -12,5 +12,19 @@
       "Saturday": true,
       "Sunday": true
     }
+  },
+  {
+    "id": 2,
+    "message": "Good evening. Please send the current Odometer Readings. Thank you!",
+    "time": "18:20",
+    "weekdays": {
+      "Monday": false,
+      "Tuesday": false,
+      "Wednesday": false,
+      "Thursday": false,
+      "Friday": false,
+      "Saturday": false,
+      "Sunday": true
+    }
   }
 ]

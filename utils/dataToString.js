@@ -8,9 +8,9 @@ const dataToString = (data) => {
     for (const [key, value] of Object.entries(item.weekdays)) {
       //   console.log(`${key}: ${value}`);
       //   console.log(value);
-      newData += `\n<b>${key}:</b> ${value ? "✅" : "❌"}`;
+      newData += `\n<b>- ${key}:</b> ${value ? "✅" : "❌"}`;
     }
-    newData += `\n----------------\n`;
+    newData += `\n\n----------------\n\n`;
   });
   return newData;
 };
